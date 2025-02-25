@@ -5,4 +5,8 @@ import pytest
 @pytest.fixture(scope="session")
 def minimake_executable():
     """获取 minimake 可执行文件路径，支持环境变量设置"""
+    
+    # 检测minimake路径是否存在
+    if not os.path.exists(os.getenv("MINIMAKE_PATH", "./minimake")):
+        raise FileNotFoundError("minimake executable not found")
     return os.getenv("MINIMAKE_PATH", "./minimake")  # 默认当前目录

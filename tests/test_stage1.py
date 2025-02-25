@@ -5,7 +5,9 @@ def test_help_option(minimake_executable):
     """测试 --help 选项"""
     result = subprocess.run([minimake_executable, "--help"], capture_output=True, text=True)
     assert result.returncode == 0
-    assert "Usage" in result.stdout  # 确保有 Usage 提示
+    # 确保有 Usage 或 用法 字样
+    assert "Usage" in result.stdout or "用法" in result.stdout
+    assert "--help" in result.stdout
 
 def test_invalid_option(minimake_executable):
     """测试无效选项"""
