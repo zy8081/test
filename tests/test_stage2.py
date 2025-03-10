@@ -2,6 +2,7 @@ import subprocess
 
 # 任务1: 预处理与文件读取
 
+# 任务3：规则解析与存储
 
 # 任务2: 静态语法检查
 def test_valid_makefile(minimake_executable):
