@@ -1,6 +1,6 @@
 import subprocess
 
-# 任务1: 预处理与文件读取
+
 
 # 任务3：规则解析与存储
 
@@ -16,5 +16,3 @@ def test_invalid_makefile(minimake_executable):
     result = subprocess.run([minimake_executable, "-f", "tests/assets/Makefile_invalid"], capture_output=True, text=True)
     assert result.returncode != 0
     assert "Syntax error" in result.stderr
-
-# 任务3：规则解析与存储

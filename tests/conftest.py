@@ -9,4 +9,6 @@ def minimake_executable():
     # 检测minimake路径是否存在
     if not os.path.exists(os.getenv("MINIMAKE_PATH", "./minimake")):
         raise FileNotFoundError("minimake executable not found")
-    return os.getenv("MINIMAKE_PATH", "./minimake")  # 默认当前目录
+    minimake_path = os.getenv("MINIMAKE_PATH", "./minimake")
+    minimake_path = os.path.abspath(minimake_path)
+    return minimake_path
