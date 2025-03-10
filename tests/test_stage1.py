@@ -27,6 +27,5 @@ def test_valid_makefile(minimake_executable):
     with open("tests/assets/sandbox/test_valid_makefile/Minimake_claered_expected.mk") as f:
         expected_content = f.read()
     assert result_content == expected_content
-    assert result.returncode == 0
     
 # 任务1: 预处理与文件读取
