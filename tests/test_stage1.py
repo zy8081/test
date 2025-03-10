@@ -28,4 +28,4 @@ def test_valid_makefile(minimake_executable):
         expected_content = f.read()
     assert result_content == expected_content
     
-# 任务1: 预处理与文件读取
+# 任务3:静态语法检查
