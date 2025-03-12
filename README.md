@@ -4,7 +4,7 @@
 
 1. 要求使用操作系统linux,推荐发行版ubuntu,方便上手
     1. 可以考虑wsl(适用于 Linux 的 Windows 子系统文档) 参考文档
-    <https://code.visualstudio.com/docs/cpp/config-wsl>
+    <https://code.visualstudio.com/docs/cpp/config-wsl>\
     <https://learn.microsoft.com/zh-cn/windows/wsl/install>
     2. 开发环境搭建参考
     1. <https://code.visualstudio.com/docs/cpp/config-linux>
