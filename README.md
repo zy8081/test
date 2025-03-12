@@ -3,11 +3,12 @@
 ## 前言
 
 1. 要求使用操作系统linux,推荐发行版ubuntu,方便上手
-1. 可以考虑wsl(适用于 Linux 的 Windows 子系统文档) 参考文档 <https://code.visualstudio.com/docs/cpp/config-wsl>
-<https://learn.microsoft.com/zh-cn/windows/wsl/install>
-2. 开发环境搭建参考
+    1. 可以考虑wsl(适用于 Linux 的 Windows 子系统文档) 参考文档
+    <https://code.visualstudio.com/docs/cpp/config-wsl>
+    <https://learn.microsoft.com/zh-cn/windows/wsl/install>
+    2. 开发环境搭建参考
     1. <https://code.visualstudio.com/docs/cpp/config-linux>
-3. 可以考虑使用云主机，例如华为云主机，有免费额度，够大家临时用了<https://developer.huaweicloud.com/space/devportal/desktop>
+    3. 可以考虑使用云主机，例如华为云主机，有免费额度，够大家临时用了<https://developer.huaweicloud.com/space/devportal/desktop>
 2. 对于已你提交的工程,我们希望可以通过gcc等工具一键编译、运行,有明显的构建入口
 3. 请尽量减少使用第三方库,尽量使用标准库和一些系统自带(例如POSIX标准库)的库
 4. 如果你没有做完全部题目也完全没有关系,相比于完成度,我们更看重你的学习态度与能力:你需要给出一份学习文档,记录学习过程中你认为的重点和疑点并整理简要文档,但请确保文档上写的知识你完全理解,该文档会作为答辩提问的来源之一
