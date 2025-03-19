@@ -27,3 +27,4 @@
 3. 绿色对勾表示通过测试
 ![alt text](images/image-5.png)
 4. 红色叉号表示未通过，需检查日志定位问题
+![alt text](images/image-6.png)
