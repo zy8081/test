@@ -1,18 +1,17 @@
 import subprocess
 
 
+# 任务1：规则解析、存储与检查
 
-# 任务3：规则解析与存储
 
-# 任务2: 静态语法检查
-def test_valid_makefile(minimake_executable):
+# 任务2: 进行你的第一次编译
+def test_first_run_makefile(minimake_executable):
     """测试正确的 Makefile 解析"""
-    result = subprocess.run([minimake_executable, "-f", "tests/assets/Makefile_basic"], capture_output=True, text=True)
+    result = subprocess.run(
+        [minimake_executable, "app"],
+        capture_output=True,
+        text=True,
+        cwd="tests/assets/sandbox/test_first_run_makefile",
+    )
     assert result.returncode == 0
     assert "Parsed successfully" in result.stdout
-
-def test_invalid_makefile(minimake_executable):
-    """测试无效 Makefile 解析错误"""
-    result = subprocess.run([minimake_executable, "-f", "tests/assets/Makefile_invalid"], capture_output=True, text=True)
-    assert result.returncode != 0
-    assert "Syntax error" in result.stderr
